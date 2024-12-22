@@ -115,6 +115,15 @@
   color: white;
 }
 
+#f3 img{
+  width: 30%;
+  height: 50%;
+  border-radius: 20%;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+}
+
 
 /* Design */
 
