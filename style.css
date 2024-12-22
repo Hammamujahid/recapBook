@@ -12,13 +12,13 @@
   align-items: center;
 }
 
-#b1 img{
+#b1 img {
   width: 55%;
   height: 75%;
   position: absolute;
 }
 
-#b1 .container1{
+#b1 .container1 {
   width: 15%;
   height: 5%;
   position: absolute;
@@ -29,7 +29,7 @@
   transform: rotate(135deg);
 }
 
-#b1 .container2{
+#b1 .container2 {
   width: 15%;
   height: 5%;
   position: absolute;
@@ -54,26 +54,26 @@
   border: 1px solid black;
 }
 
-#b1{
-    background-image:url(./assets/img/bg1.jpg);
+#b1 {
+  background-image: url(./assets/img/bg1.jpg);
 }
 
-#f2{
-    background-image: url(./assets/img/bg1.jpg);
-    background-position: 80% 80%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+#f2 {
+  background-image: url(./assets/img/bg1.jpg);
+  background-position: 80% 80%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-#f2 .text-content{
-    width: 70%;
-    height: 30%;
+#f2 .text-content {
+  width: 70%;
+  height: 30%;
 }
 
-#b2{
+#b2 {
   background-image: url(./assets/img/bg3.jpg);
   color: white;
   display: flex;
@@ -82,34 +82,34 @@
   align-items: center;
 }
 
-#b2 h1{
+#b2 h1 {
   margin-top: 7%;
   border: solid white;
   padding: 2%;
   border-radius: 20%;
 }
 
-#b2 video{
+#b2 video {
   margin-top: 12%;
   width: 70%;
   height: 37%;
 }
 
-#b2 .text-content{
+#b2 .text-content {
   margin-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
-  text-align: center; 
+  text-align: center;
   display: inline-block;
   text-shadow: 0px 0px 14px white, 0px 0px 14px white;
   color: white;
 }
 
-#b2 a{
+#b2 a {
   color: white;
 }
 
-#f3{
+#f3 {
   background-image: url(./assets/img/bg3.jpg);
   background-position: 80% 80%;
   color: white;
@@ -119,11 +119,11 @@
   align-items: center;
 }
 
-#f3 h1{
+#f3 h1 {
   margin-top: 8%;
 }
 
-#f3 .Container{
+#f3 .Container {
   height: 100%;
   display: flex;
   margin-top: 15%;
@@ -134,7 +134,7 @@
   align-items: start;
 }
 
-#f3 img{
+#f3 img {
   width: 35%;
   height: 70%;
   border-radius: 20%;
@@ -142,16 +142,87 @@
   filter: brightness(85%);
 }
 
-#f3 h1{
+#f3 h1 {
   text-decoration: underline wavy;
   text-underline-offset: 20%;
 }
 
-#f3 .text-content{
+#f3 .text-content {
   text-align: start;
   font-size: 90%;
 }
 
+#b3 {
+  background-image: url(./assets/img/bg2.jpg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+
+#b3 h1 {
+  margin-top: 10%;
+}
+
+#b3 .Container,
+#f4 .Container {
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  width: 95%;
+  height: 100%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border-radius: 5%;
+}
+
+#b3 .Container {
+  border-right: transparent;
+  margin-left: 2%;
+}
+
+#f4 .Container {
+  border-left: transparent;
+  margin-right: 2%;
+}
+
+#b3 .title {
+  transform: rotate(270deg);
+  text-shadow: 0px 0px 14px white, 0px 0px 14px white;
+  position: absolute;
+  left: 0;
+}
+
+#b3 iframe,
+#f4 iframe {
+  width: 55%;
+  height: 40%;
+}
+
+#f4 {
+  background-image: url(./assets/img/bg2.jpg);
+  background-position: 80% 80%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+#f4 h1 {
+  margin-top: 10%;
+  margin-left: 1%;
+}
+
+#f4 .title {
+  transform: rotate(90deg);
+  text-shadow: 0px 0px 14px white, 0px 0px 14px white;
+  position: absolute;
+  right: 0;
+}
 
 /* Design */
 
@@ -187,10 +258,10 @@ body {
 }
 
 .front,
-.back{
-    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.7);
-    -webkit-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.7);
-    -moz-box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.7);
+.back {
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.7);
 }
 
 .front-cover,
@@ -303,25 +374,24 @@ i {
   margin: 0;
 }
 
-
 #c1 {
-  z-index: 6;
+  z-index: 8;
 }
 
 #p1 {
-  z-index: 5;
+  z-index: 7;
 }
 
 #p2 {
-  z-index: 4;
+  z-index: 6;
 }
 
 #p3 {
-  z-index: 3;
+  z-index: 5;
 }
 
 #p4 {
-  z-index: 2;
+  z-index: 4;
 }
 
 #c2 {
