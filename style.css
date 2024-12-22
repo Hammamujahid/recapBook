@@ -6,6 +6,40 @@
 
 /* Content */
 
+#b1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#b1 img{
+  width: 55%;
+  height: 75%;
+  position: absolute;
+}
+
+#b1 .container1{
+  width: 15%;
+  height: 5%;
+  position: absolute;
+  top: 12%;
+  left: 17%;
+  background-color: white;
+  opacity: 0.2;
+  transform: rotate(135deg);
+}
+
+#b1 .container2{
+  width: 15%;
+  height: 5%;
+  position: absolute;
+  bottom: 12%;
+  right: 17%;
+  background-color: white;
+  opacity: 0.2;
+  transform: rotate(135deg);
+}
+
 #f1 {
   display: flexbox;
   flex-direction: column;
@@ -21,9 +55,7 @@
 }
 
 #b1{
-    background-image:url(./assets/img/delynn2.jpg);
-    background-position: 50% 29%;
-    filter: brightness(70%);
+    background-image:url(./assets/img/bg1.jpg);
 }
 
 #f2{
@@ -39,10 +71,6 @@
 #f2 .text-content{
     width: 70%;
     height: 30%;
-}
-
-#f2 a{
-    color: white;
 }
 
 #b2{
@@ -73,6 +101,8 @@
   padding-right: 10%;
   text-align: center; 
   display: inline-block;
+  text-shadow: 0px 0px 14px white, 0px 0px 14px white;
+  color: white;
 }
 
 #b2 a{
