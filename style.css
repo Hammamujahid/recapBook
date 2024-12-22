@@ -41,7 +41,7 @@
 }
 
 #f1 {
-  display: flexbox;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -202,6 +202,10 @@
   height: 40%;
 }
 
+#f4 iframe{
+  z-index: 4;
+}
+
 #f4 {
   background-image: url(./assets/img/bg2.jpg);
   background-position: 80% 80%;
@@ -351,49 +355,3 @@ i {
   color: rgb(41, 41, 41);
 }
 
-/* Notifikasi Orientasi */
-#orientation-warning {
-  display: none; /* Default disembunyikan */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  z-index: 10000; /* Pastikan di atas elemen lainnya */
-  font-size: 1.2em;
-  padding: 20px;
-}
-
-#orientation-warning p {
-  margin: 0;
-}
-
-#c1 {
-  z-index: 8;
-}
-
-#p1 {
-  z-index: 7;
-}
-
-#p2 {
-  z-index: 6;
-}
-
-#p3 {
-  z-index: 5;
-}
-
-#p4 {
-  z-index: 4;
-}
-
-#c2 {
-  z-index: 1;
-}
