@@ -74,7 +74,7 @@
 }
 
 #b2{
-  background-image: url(./assets/img/bg2.jpg);
+  background-image: url(./assets/img/bg3.jpg);
   color: white;
   display: flex;
   flex-direction: column;
@@ -106,6 +106,12 @@
 }
 
 #b2 a{
+  color: white;
+}
+
+#f3{
+  background-image: url(./assets/img/bg3.jpg);
+  background-position: 80% 80%;
   color: white;
 }
 
