@@ -9,6 +9,8 @@
 #f1 {
   display: flexbox;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 10%;
   font-size: 100%;
   filter: brightness(90%);
@@ -45,11 +47,12 @@
 
 #b2{
   background-image: url(./assets/img/bg2.jpg);
+  color: white;
 }
 
-#b2 img{
-  width: 70%;
-  transform: rotate(270deg);
+#b2 a{
+  color: white;
+  
 }
 
 
@@ -162,7 +165,7 @@ body {
 button {
   border: none;
   background-color: transparent;
-  margin: 10px;
+  margin: 2%;
   cursor: pointer;
   transition: transform 0.5s;
 }

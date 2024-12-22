@@ -30,8 +30,8 @@ function playSound() {
 
 function openBook() {
   book.style.transform = "translateX(50%)";
-  prevBtn.style.transform = "translateX(-260px)";
-  nextBtn.style.transform = "translateX(260px)";
+  prevBtn.style.transform = "translateX(-19vw)";
+  nextBtn.style.transform = "translateX(19vw)";
 }
 
 function closeBook(isFirstPage) {
