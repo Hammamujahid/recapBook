@@ -11,6 +11,24 @@ const paper4 = document.querySelector("#p4");
 const cover2 = document.querySelector("#c2");
 const pages = [cover1, paper1, paper2, paper3, paper4, cover2];
 
+function checkOrientation() {
+  const orientationWarning = document.querySelector("#orientation-warning");
+  if (window.innerWidth < window.innerHeight) {
+    // Mode portrait
+    orientationWarning.style.display = "flex";
+  } else {
+    // Mode landscape
+    orientationWarning.style.display = "none";
+  }
+}
+
+// Jalankan fungsi saat halaman dimuat
+window.addEventListener("load", checkOrientation);
+
+// Jalankan fungsi saat orientasi layar berubah
+window.addEventListener("resize", checkOrientation);
+
+
 let currentState = 1;
 let numOfPapers = 6;
 let maxState = numOfPapers + 1;

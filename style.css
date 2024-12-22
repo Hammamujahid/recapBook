@@ -183,6 +183,30 @@ i {
   color: rgb(41, 41, 41);
 }
 
+/* Notifikasi Orientasi */
+#orientation-warning {
+  display: none; /* Default disembunyikan */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10000; /* Pastikan di atas elemen lainnya */
+  font-size: 1.2em;
+  padding: 20px;
+}
+
+#orientation-warning p {
+  margin: 0;
+}
+
+
 #c1 {
   z-index: 6;
 }
