@@ -192,16 +192,20 @@
 }
 
 #b3 .title,
-#f4 .title{
+#f4 .title {
   color: white;
-  height: 205%;
-  position: relative;
-  transform: rotate(270deg);
+  position: absolute;
   text-shadow: 0px 0px 14px white, 0px 0px 14px white;
 }
 
+#b3 .title {
+  left: 0;
+  transform: rotate(270deg) translate(0%, -150%);
+}
+
 #f4 .title {
-  transform: rotate(90deg);
+  right: 0;
+  transform: rotate(90deg) translate(0%, -150%);
 }
 
 #b3 .Container2,
@@ -216,7 +220,7 @@
   position: absolute;
 }
 
-#b3 .Container2{
+#b3 .Container2 {
   border-right: none;
 }
 
