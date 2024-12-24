@@ -250,11 +250,12 @@
   display: flex;
   justify-content: center;
   align-items: end;
+  gap: 5%;
 }
 
 #b4 h1{
   transform: rotate(270deg) translate(50%, -150%);
-  font-size: 170%;
+  font-size: 150%;
   text-decoration: underline;
   text-underline-offset: 20%;
 }
@@ -285,7 +286,7 @@
 }
 
 #b4 .text-content{
-  width: 40%;
+  width: 50%;
   font-size: 75%;
 text-align: start;}
 /* Design */
