@@ -138,7 +138,7 @@ function goNextPage() {
     setTimeout(() => {
       updateZIndex();
       isAnimating = false;
-    }, 800);
+    }, 500);
 
     currentState++;
 
