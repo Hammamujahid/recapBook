@@ -235,7 +235,7 @@
   border-radius: 5%;
 }
 
-#b4{
+#b4 {
   background-image: url("./assets/img/bg4.jpg");
   display: flex;
   flex-direction: column;
@@ -244,7 +244,7 @@
   color: white;
 }
 
-#b4 .Container1{
+#b4 .Container1 {
   width: 100%;
   height: 60%;
   display: flex;
@@ -253,14 +253,14 @@
   gap: 5%;
 }
 
-#b4 h1{
+#b4 h1 {
   transform: rotate(270deg) translate(50%, -150%);
   font-size: 150%;
   text-decoration: underline;
   text-underline-offset: 20%;
 }
 
-#b4 .Container1 img{
+#b4 .Container1 img {
   height: 85%;
   width: 30%;
   position: relative;
@@ -270,7 +270,7 @@
   filter: brightness(75%);
 }
 
-#b4 .Container2{
+#b4 .Container2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,7 +278,7 @@
   height: 40%;
 }
 
-#b4 .Container2 img{
+#b4 .Container2 img {
   height: 60%;
   width: 25%;
   position: relative;
@@ -287,21 +287,22 @@
   filter: brightness(75%);
 }
 
-#b4 .text-content{
+#b4 .text-content {
   width: 50%;
   font-size: 75%;
-text-align: start;}
+  text-align: start;
+}
 
-#f5{
+#f5 {
   background-image: url("./assets/img/bg4.jpg");
   background-position: 70% 50%;
-color: white;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: start;
 }
 
-#f5 .Container1{
+#f5 .Container1 {
   left: 0;
   position: absolute;
   display: flex;
@@ -314,18 +315,18 @@ color: white;
   padding-left: 6%;
 }
 
-#f5 h1{
+#f5 h1 {
   font-size: 130%;
   text-decoration: underline;
   text-underline-offset: 20%;
 }
 
-#f5 .text-content{
+#f5 .text-content {
   font-size: 90%;
   text-align: center;
 }
 
-#f5 .Container2{
+#f5 .Container2 {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -337,13 +338,126 @@ color: white;
   gap: 10%;
 }
 
-#f5 img{
+#f5 img {
   position: relative;
   width: 63%;
   height: 32%;
   border-radius: 100%;
   border: 2px solid white;
   filter: brightness(75%);
+}
+
+#b5 {
+  background-image: url("/assets/img/bg5.jpg");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+}
+
+#b5 h1 {
+  border: 2px solid white;
+  border-top: transparent;
+  border-right: transparent;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  margin-top: 5%;
+  padding-right: 1%;
+  border-bottom-left-radius: 20%;
+  text-shadow: 2px 2px 2px gray, -2px 2px 2px gray;
+}
+
+#b5 .Container1,
+#b5 .Container2 {
+  justify-content: space-between;
+  margin-top: 7%;
+  margin-right: 10%;
+  width: 80%;
+  height: 30%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0.468);
+  border-radius: 5%;
+  position: relative;
+}
+
+#b5 .text-content,
+#f6 .text-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#b5 .Container1 .title,
+#f6 .Container2 .title {
+  padding-right: 2%;
+  font-size: 140%;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  border: 2px solid white;
+  border-top: transparent;
+  border-left: transparent;
+}
+
+#b5 p,
+#f6 p {
+  font-size: 100%;
+}
+
+#b5 .Container2 .title,
+#f6 .Container1 .title {
+  padding-left: 2%;
+  font-size: 140%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  border: 2px solid white;
+  border-top: transparent;
+  border-right: transparent;
+}
+
+#b5 img,
+#f6 img {
+  width: 40%;
+  border-radius: 5%;
+  border: 1px solid white;
+}
+
+#f6 {
+  background-image: url("/assets/img/bg5.jpg");
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+#f6 h1 {
+  border: 2px solid white;
+  border-top: transparent;
+  border-left: transparent;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  margin-top: 5%;
+  padding-left: 1%;
+  border-bottom-right-radius: 20%;
+  text-shadow: 2px 2px 2px gray, -2px 2px 2px gray;
+}
+
+#f6 .Container1,
+#f6 .Container2 {
+  justify-content: space-between;
+  margin-top: 5%;
+  margin-left: 10%;
+  width: 80%;
+  height: 30%;
+  display: flex;
+  background-color: rgba(128, 128, 128, 0.468);
+  border-radius: 5%;
+  position: relative;
 }
 
 /* Design */
@@ -444,7 +558,7 @@ body {
 
 .front-content,
 .back-content {
-    background-color: white;
+  background-color: white;
   color: black;
 }
 
@@ -455,7 +569,7 @@ body {
 
 button {
   border: none;
-  background-color:transparent;
+  background-color: transparent;
   margin: 2%;
   cursor: pointer;
   transition: transform 0.5s;

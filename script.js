@@ -86,7 +86,6 @@ function updateZIndex() {
   });
 }
 
-
 function openBook() {
   book.style.transform = "translateX(50%)";
   prevBtn.style.transform = "translateX(-19vw)";
@@ -102,25 +101,6 @@ function closeBook(isFirstPage) {
   prevBtn.style.transform = "translateX(0px)";
   nextBtn.style.transform = "translateX(0px)";
 }
-
-// function goNextPage() {
-//   if (currentState < maxState) {
-//     isAnimating = true;
-//     playSound();
-//     const currentPage = pages[currentState - 1];
-//     if (currentState === 1) {
-//       openBook();
-//     }
-//     currentPage.classList.add("flipped");
-//     updateZIndex();
-//     isAnimating = false;
-//     currentState++;
-
-//     if (currentState === maxState) {
-//       closeBook(false);
-//     }
-//   }
-// }
 
 function goNextPage() {
   if (currentState < maxState) {
@@ -159,7 +139,9 @@ function goPrevPage() {
     const currentPage = pages[currentState - 1];
     currentPage.classList.remove("flipped");
     updateZIndex();
-    isAnimating = false;
+    setTimeout(() => {
+      isAnimating = false;
+    }, 500);
     if (currentState === 1) {
       closeBook(true);
     }
