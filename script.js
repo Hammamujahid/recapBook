@@ -103,17 +103,43 @@ function closeBook(isFirstPage) {
   nextBtn.style.transform = "translateX(0px)";
 }
 
+// function goNextPage() {
+//   if (currentState < maxState) {
+//     isAnimating = true;
+//     playSound();
+//     const currentPage = pages[currentState - 1];
+//     if (currentState === 1) {
+//       openBook();
+//     }
+//     currentPage.classList.add("flipped");
+//     updateZIndex();
+//     isAnimating = false;
+//     currentState++;
+
+//     if (currentState === maxState) {
+//       closeBook(false);
+//     }
+//   }
+// }
+
 function goNextPage() {
   if (currentState < maxState) {
     isAnimating = true;
     playSound();
+
     const currentPage = pages[currentState - 1];
+
     if (currentState === 1) {
       openBook();
     }
+
     currentPage.classList.add("flipped");
-    updateZIndex();
-    isAnimating = false;
+
+    setTimeout(() => {
+      updateZIndex();
+      isAnimating = false;
+    }, 800);
+
     currentState++;
 
     if (currentState === maxState) {
