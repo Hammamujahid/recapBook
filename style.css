@@ -461,6 +461,89 @@
   position: relative;
 }
 
+#b6{
+  background-image: url(/assets/img/bg6.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  color: white;
+}
+
+#b6 .Container1{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#b6 .Container1 p{
+  padding-right: 5%;
+  width: 50%;
+  text-align: start;
+  margin-top: 15%;
+  font-size: 90%;
+}
+
+#b6 .Container1 h1{
+  font-size: 150%;
+  transform: rotate(315deg) translate(-30%, 110%);
+  text-decoration: underline overline;
+  text-underline-offset: 30%;
+  text-shadow: 2px 2px 2px gray, -2px 2px 2px gray;
+}
+
+#b6 img{
+  position: absolute;
+  width: 22%;
+  height: 22%;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+#b6 .img1{
+  top: 40%;
+  left: 12%;
+}
+
+#b6 .img2{
+  bottom: 10%;
+  left: 27%;
+}
+
+#b6 .img3{
+  bottom: 25%;
+  left: 60%;
+}
+
+#f7{
+  background-image: url(/assets/img/bg6.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#f7 .emote{
+  font-size: 100%;
+  margin-bottom: 3%;
+}
+
+#f7 .Container{
+  width: 50%;
+  height: 80%;
+  padding: 2%;
+  border: 2px solid white;
+  border-radius: 10%;
+}
+
+#f7 video{
+  position: absolute;
+  width: 45%;
+  height: 75%;
+  border: 2px solid white;
+}
+
 /* Design */
 
 body {
