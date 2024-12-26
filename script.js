@@ -108,6 +108,7 @@ function goNextPage() {
     playSound();
 
     const currentPage = pages[currentState - 1];
+    currentPage.style.transformStyle = "preserve-3d";
 
     if (currentState === 1) {
       openBook();
@@ -121,6 +122,7 @@ function goNextPage() {
     }, 500);
 
     currentState++;
+
 
     if (currentState === maxState) {
       closeBook(false);
@@ -137,6 +139,7 @@ function goPrevPage() {
     }
     currentState--;
     const currentPage = pages[currentState - 1];
+    currentPage.style.transformStyle = "preserve-3d";
     currentPage.classList.remove("flipped");
     updateZIndex();
     setTimeout(() => {

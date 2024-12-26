@@ -544,6 +544,10 @@
   border: 2px solid white;
 }
 
+#b7{
+  background-image: url('/assets/img/bg4.jpg');
+}
+
 /* Design */
 
 body {
@@ -574,7 +578,7 @@ body {
   left: 0;
   color: white;
   transform-origin: left;
-  transition: transform 0.8s ease-in-out, z-index 0s linear, opacity 0.5s ease;
+  transition: transform 0.8s;
 }
 
 /* .front,
@@ -615,7 +619,7 @@ body {
 .flipped .front-cover,
 .flipped .back-cover {
   transform: rotateY(-180deg);
-  transition: transform 0.8s ease-in-out, z-index 0s linear 0.4s;
+  transition: transform 0.8s;
 }
 
 .front-cover,
