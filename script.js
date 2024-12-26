@@ -118,6 +118,9 @@ function goNextPage() {
 
     setTimeout(() => {
       updateZIndex();
+    if(currentPage!== paper7){
+      currentPage.style.transformStyle = "";
+    }
       isAnimating = false;
     }, 500);
 
@@ -152,12 +155,12 @@ function goPrevPage() {
   }
 }
 
+//Font Size
 window.addEventListener('resize', () => {
   const bookHeight = document.querySelector('.book').offsetHeight;
   document.documentElement.style.setProperty('--book-height', bookHeight + 'px');
 });
 
-// Inisialisasi awal
 const initBookHeight = document.querySelector('.book').offsetHeight;
 document.documentElement.style.setProperty('--book-height', initBookHeight + 'px');
 
