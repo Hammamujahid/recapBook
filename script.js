@@ -152,6 +152,16 @@ function goPrevPage() {
   }
 }
 
+window.addEventListener('resize', () => {
+  const bookHeight = document.querySelector('.book').offsetHeight;
+  document.documentElement.style.setProperty('--book-height', bookHeight + 'px');
+});
+
+// Inisialisasi awal
+const initBookHeight = document.querySelector('.book').offsetHeight;
+document.documentElement.style.setProperty('--book-height', initBookHeight + 'px');
+
+
 snowFall.snow(document.querySelector("body"), {
   round: true,
   minSize: 1,

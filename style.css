@@ -46,10 +46,11 @@
   justify-content: center;
   align-items: center;
   gap: 10%;
-  font-size: 100%;
-  filter: brightness(90%);
+  font-size: calc(0.03 * var(--book-height));
+    filter: brightness(90%);
 }
 #f1 img {
+  height: 40%;
   width: 30%;
   border: 1px solid black;
 }
