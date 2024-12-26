@@ -145,6 +145,7 @@
 #f3 h1 {
   text-decoration: underline wavy;
   text-underline-offset: 20%;
+  font-size: 4.5vh;
 }
 
 #f3 .text-content {
