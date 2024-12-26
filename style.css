@@ -72,6 +72,7 @@
 #f2 .text-content {
   width: 70%;
   height: 30%;
+  font-size: calc(0.03 * var(--book-height));
 }
 
 #b2 {
@@ -88,6 +89,7 @@
   border: solid white;
   padding: 2%;
   border-radius: 20%;
+  font-size: calc(0.05 * var(--book-height));
 }
 
 #b2 video {
@@ -97,6 +99,7 @@
 }
 
 #b2 .text-content {
+  font-size: calc(0.028 * var(--book-height));
   margin-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
@@ -120,9 +123,6 @@
   align-items: center;
 }
 
-#f3 h1 {
-  margin-top: 8%;
-}
 
 #f3 .Container {
   height: 100%;
@@ -144,14 +144,15 @@
 }
 
 #f3 h1 {
+  margin-top: 8%;
   text-decoration: underline wavy;
   text-underline-offset: 20%;
-  font-size: 4.5vh;
+  font-size: calc(0.05 * var(--book-height));
 }
 
 #f3 .text-content {
   text-align: start;
-  font-size: 2.5vh;
+  font-size: calc(0.028 * var(--book-height));
 }
 
 #b3,
@@ -172,11 +173,14 @@
 #b3 h1 {
   margin-top: 10%;
   margin-right: 1%;
+  font-size: calc(0.055 * var(--book-height));
 }
 
 #f4 h1 {
   margin-top: 10%;
   margin-left: 0.5%;
+  font-size: calc(0.055 * var(--book-height));
+
 }
 
 #b3 .Container1,
@@ -195,6 +199,7 @@
 
 #b3 .title,
 #f4 .title {
+  font-size: calc(0.027 * var(--book-height));
   color: white;
   position: absolute;
   text-shadow: 0px 0px 14px white, 0px 0px 14px white;
@@ -257,7 +262,7 @@
 
 #b4 h1 {
   transform: rotate(270deg) translate(50%, -150%);
-  font-size: 150%;
+  font-size: calc(0.048 * var(--book-height));
   text-decoration: underline;
   text-underline-offset: 20%;
 }
@@ -291,7 +296,7 @@
 
 #b4 .text-content {
   width: 50%;
-  font-size: 75%;
+  font-size: calc(0.02 * var(--book-height));
   text-align: start;
 }
 
@@ -318,13 +323,13 @@
 }
 
 #f5 h1 {
-  font-size: 130%;
+  font-size: calc(0.038 * var(--book-height));
   text-decoration: underline;
   text-underline-offset: 20%;
 }
 
 #f5 .text-content {
-  font-size: 90%;
+  font-size: calc(0.025 * var(--book-height));
   text-align: center;
 }
 
@@ -360,6 +365,7 @@
 
 #b5 h1 {
   border: 2px solid white;
+  font-size: calc(0.055 * var(--book-height));
   border-top: transparent;
   border-right: transparent;
   padding-left: 5%;
@@ -395,7 +401,7 @@
 #b5 .Container1 .title,
 #f6 .Container2 .title {
   padding-right: 2%;
-  font-size: 140%;
+  font-size: calc(0.035 * var(--book-height));
   position: absolute;
   top: 2%;
   left: 2%;
@@ -406,13 +412,13 @@
 
 #b5 p,
 #f6 p {
-  font-size: 100%;
+  font-size: calc(0.028 * var(--book-height));
 }
 
 #b5 .Container2 .title,
 #f6 .Container1 .title {
   padding-left: 2%;
-  font-size: 140%;
+  font-size: calc(0.035 * var(--book-height));
   position: absolute;
   top: 2%;
   right: 2%;
@@ -439,6 +445,7 @@
 }
 
 #f6 h1 {
+  font-size: calc(0.055 * var(--book-height));
   border: 2px solid white;
   border-top: transparent;
   border-left: transparent;
@@ -485,11 +492,11 @@
   width: 50%;
   text-align: start;
   margin-top: 15%;
-  font-size: 90%;
+  font-size: calc(0.027 * var(--book-height));
 }
 
 #b6 .Container1 h1{
-  font-size: 150%;
+  font-size: calc(0.045 * var(--book-height));
   transform: rotate(315deg) translate(-30%, 110%);
   text-decoration: underline overline;
   text-underline-offset: 30%;
