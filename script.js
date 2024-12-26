@@ -143,6 +143,7 @@ function goPrevPage() {
     currentPage.classList.remove("flipped");
     updateZIndex();
     setTimeout(() => {
+      currentPage.style.transformStyle = "";
       isAnimating = false;
     }, 500);
     if (currentState === 1) {
