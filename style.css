@@ -244,6 +244,98 @@ img {
 }
 
 #b4 {
+  background-image: url("/assets/img/bg8.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  color: white;
+}
+
+#b4 h1 {
+  font-size: calc(0.05 * var(--book-height));
+}
+
+#b4 .Container1,
+#b4 .Container2,
+#b4 .Container3,
+#b4 .Container4 {
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 80%;
+  height: 18%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+#b4 a {
+  height: 80%;
+  width: 20%;
+}
+
+#b4 img {
+  height: 100%;
+  width: 100%;
+}
+
+#b4 .text-content {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#b4 .text-content h1 {
+  font-size: calc(0.035 * var(--book-height));
+}
+
+#b4 .text-content p {
+  font-size: calc(0.025 * var(--book-height));
+}
+
+#f5 {
+  background-image: url("/assets/img/bg8.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+#f5 .Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+}
+
+#f5 h1 {
+  margin-top: 7%;
+  font-size: calc(0.05 * var(--book-height));
+}
+
+#f5 iframe {
+  width: 70%;
+  height: 50%;
+}
+
+#f5 p {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 5%;
+  font-size: calc(0.03 * var(--book-height));
+}
+
+#b5 {
   background-image: url("./assets/img/bg4.jpg");
   display: flex;
   flex-direction: column;
@@ -252,7 +344,7 @@ img {
   color: white;
 }
 
-#b4 .Container1 {
+#b5 .Container1 {
   width: 100%;
   height: 60%;
   display: flex;
@@ -261,14 +353,14 @@ img {
   gap: 5%;
 }
 
-#b4 h1 {
+#b5 h1 {
   transform: rotate(270deg) translate(50%, -150%);
   font-size: calc(0.048 * var(--book-height));
   text-decoration: underline;
   text-underline-offset: 20%;
 }
 
-#b4 .Container1 img {
+#b5 .Container1 img {
   height: 85%;
   width: 30%;
   position: relative;
@@ -277,7 +369,7 @@ img {
   border-radius: 5%;
 }
 
-#b4 .Container2 {
+#b5 .Container2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -285,7 +377,7 @@ img {
   height: 40%;
 }
 
-#b4 .Container2 img {
+#b5 .Container2 img {
   height: 60%;
   width: 25%;
   position: relative;
@@ -293,13 +385,13 @@ img {
   border: 2px solid white;
 }
 
-#b4 .text-content {
+#b5 .text-content {
   width: 50%;
   font-size: calc(0.02 * var(--book-height));
   text-align: start;
 }
 
-#f5 {
+#f6 {
   background-image: url("./assets/img/bg4.jpg");
   background-position: 70% 50%;
   color: white;
@@ -308,7 +400,7 @@ img {
   align-items: start;
 }
 
-#f5 .Container1 {
+#f6 .Container1 {
   left: 0;
   position: absolute;
   display: flex;
@@ -321,18 +413,18 @@ img {
   padding-left: 6%;
 }
 
-#f5 h1 {
+#f6 h1 {
   font-size: calc(0.038 * var(--book-height));
   text-decoration: underline;
   text-underline-offset: 20%;
 }
 
-#f5 .text-content {
+#f6 .text-content {
   font-size: calc(0.025 * var(--book-height));
   text-align: center;
 }
 
-#f5 .Container2 {
+#f6 .Container2 {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -344,7 +436,7 @@ img {
   gap: 10%;
 }
 
-#f5 img {
+#f6 img {
   position: relative;
   width: 63%;
   height: 32%;
@@ -352,7 +444,7 @@ img {
   border: 2px solid white;
 }
 
-#b5 {
+#b6 {
   background-image: url("/assets/img/bg5.jpg");
   color: white;
   display: flex;
@@ -361,7 +453,7 @@ img {
   align-items: end;
 }
 
-#b5 h1 {
+#b6 h1 {
   border: 2px solid white;
   font-size: calc(0.055 * var(--book-height));
   border-top: transparent;
@@ -374,8 +466,8 @@ img {
   text-shadow: 2px 2px 2px gray, -2px 2px 2px gray;
 }
 
-#b5 .Container1,
-#b5 .Container2 {
+#b6 .Container1,
+#b6 .Container2 {
   justify-content: space-between;
   margin-top: 7%;
   margin-right: 10%;
@@ -387,8 +479,8 @@ img {
   position: relative;
 }
 
-#b5 .text-content,
-#f6 .text-content {
+#b6 .text-content,
+#f7 .text-content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -396,8 +488,8 @@ img {
   align-items: center;
 }
 
-#b5 .Container1 .title,
-#f6 .Container2 .title {
+#b6 .Container1 .title,
+#f7 .Container2 .title {
   padding-right: 2%;
   font-size: calc(0.035 * var(--book-height));
   position: absolute;
@@ -408,13 +500,13 @@ img {
   border-left: transparent;
 }
 
-#b5 p,
-#f6 p {
+#b6 p,
+#f7 p {
   font-size: calc(0.028 * var(--book-height));
 }
 
-#b5 .Container2 .title,
-#f6 .Container1 .title {
+#b6 .Container2 .title,
+#f7 .Container1 .title {
   padding-left: 2%;
   font-size: calc(0.035 * var(--book-height));
   position: absolute;
@@ -425,14 +517,14 @@ img {
   border-right: transparent;
 }
 
-#b5 img,
-#f6 img {
+#b6 img,
+#f7 img {
   width: 40%;
   border-radius: 5%;
   border: 1px solid white;
 }
 
-#f6 {
+#f7 {
   background-image: url("/assets/img/bg5.jpg");
   color: white;
   display: flex;
@@ -441,7 +533,7 @@ img {
   align-items: start;
 }
 
-#f6 h1 {
+#f7 h1 {
   font-size: calc(0.055 * var(--book-height));
   border: 2px solid white;
   border-top: transparent;
@@ -454,8 +546,8 @@ img {
   text-shadow: 2px 2px 2px gray, -2px 2px 2px gray;
 }
 
-#f6 .Container1,
-#f6 .Container2 {
+#f7 .Container1,
+#f7 .Container2 {
   justify-content: space-between;
   margin-top: 5%;
   margin-left: 10%;
@@ -467,7 +559,7 @@ img {
   position: relative;
 }
 
-#b6 {
+#b7 {
   background-image: url(/assets/img/bg6.jpg);
   display: flex;
   flex-direction: column;
@@ -475,7 +567,7 @@ img {
   color: white;
 }
 
-#b6 .Container1 {
+#b7 .Container1 {
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -484,7 +576,7 @@ img {
   position: absolute;
 }
 
-#b6 .Container1 p {
+#b7 .Container1 p {
   padding-right: 5%;
   width: 50%;
   text-align: start;
@@ -492,7 +584,7 @@ img {
   font-size: calc(0.027 * var(--book-height));
 }
 
-#b6 .Container1 h1 {
+#b7 .Container1 h1 {
   font-size: calc(0.045 * var(--book-height));
   transform: rotate(315deg) translate(-30%, 110%);
   text-decoration: underline overline;
@@ -500,7 +592,7 @@ img {
   text-shadow: 2px 2px 2px gray, -2px 2px 2px gray;
 }
 
-#b6 img {
+#b7 img {
   position: absolute;
   width: 22%;
   height: 22%;
@@ -508,29 +600,29 @@ img {
   border: 2px solid white;
 }
 
-#b6 .img1 {
+#b7 .img1 {
   top: 40%;
   left: 12%;
 }
 
-#b6 .img2 {
+#b7 .img2 {
   bottom: 10%;
   left: 27%;
 }
 
-#b6 .img3 {
+#b7 .img3 {
   bottom: 23%;
   left: 60%;
 }
 
-#f7 {
+#f8 {
   background-image: url(/assets/img/bg6.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#f7 .Container {
+#f8 .Container {
   width: 50%;
   height: 80%;
   padding: 2%;
@@ -538,14 +630,14 @@ img {
   border-radius: 10%;
 }
 
-#f7 video {
+#f8 video {
   position: absolute;
   width: 45%;
   height: 75%;
   border: 2px solid white;
 }
 
-#b7 {
+#b8 {
   background-image: url("/assets/img/bg7.jpg");
   display: flex;
   justify-content: space-between;
@@ -553,7 +645,7 @@ img {
   color: white;
 }
 
-#b7 .Container1 {
+#b8 .Container1 {
   font-size: calc(0.03 * var(--book-height));
   width: 55%;
   height: 20%;
@@ -568,12 +660,12 @@ img {
   border-bottom-right-radius: 50px;
 }
 
-#b7 .Container1 img {
+#b8 .Container1 img {
   width: 24%;
   height: 90%;
 }
 
-#b7 .Container2{
+#b8 .Container2 {
   width: 25%;
   height: 50%;
   margin-top: 25%;
@@ -589,7 +681,7 @@ img {
   font-size: calc(0.04 * var(--book-height));
 }
 
-#b7 .line{
+#b8 .line {
   width: 28%;
   height: 0.5px;
   background-color: white;
@@ -599,7 +691,7 @@ img {
   transform: rotate(330deg);
 }
 
-#f8 {
+#f9 {
   background-image: url("/assets/img/bg7.jpg");
   background-position: 80% 80%;
   display: flex;
@@ -608,7 +700,7 @@ img {
   color: white;
 }
 
-#f8 .Container1{
+#f9 .Container1 {
   width: 25%;
   height: 50%;
   margin-top: 25%;
@@ -625,21 +717,21 @@ img {
   font-size: calc(0.04 * var(--book-height));
 }
 
-#f8 .line1,
-#f8 .line2{
+#f9 .line1,
+#f9 .line2 {
   width: 28%;
   height: 0.5px;
   background-color: white;
   position: absolute;
 }
 
-#f8 .line1{
+#f9 .line1 {
   top: 36%;
   left: 25%;
   transform: rotate(330deg);
 }
 
-#f8 .line2{
+#f9 .line2 {
   left: 25%;
   bottom: 38%;
   transform: rotate(205deg);
