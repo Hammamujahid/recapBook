@@ -118,13 +118,13 @@ function goNextPage() {
 
     setTimeout(() => {
       updateZIndex();
-    if(currentPage!== paper8){
+    if(currentPage!== paper8 && currentPage!==paper5){
       currentPage.style.transformStyle = "";
     }
       isAnimating = false;
     }, 500);
 
-    currentState++;
+    currentState++; 
 
 
     if (currentState === maxState) {

@@ -672,23 +672,50 @@ img {
   display: flex;
   justify-content: end;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.151);
+  background-color: rgb(48, 48, 48);
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   border: 1px solid white;
   border-right: transparent;
   text-shadow: 2px 2px 2px gray, -2px 2px 2px gray;
   font-size: calc(0.04 * var(--book-height));
+  z-index: 1;
 }
 
 #b8 .line {
-  width: 28%;
+  width: 35%;
   height: 0.5px;
   background-color: white;
   position: absolute;
   bottom: 45%;
-  right: 25%;
+  right: 20%;
   transform: rotate(330deg);
+}
+
+#b8 .Container3{
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 20%;
+  left: 10%;
+  gap: 2%;
+  border-radius: 20%;
+  font-size: calc(0.03 * var(--book-height));
+  background-color: rgb(48, 48, 48);
+  box-shadow: -2px 2px 5px 0px rgba(193,193,193,0.75);
+-webkit-box-shadow: -2px 2px 5px 0px rgba(193,193,193,0.75);
+-moz-box-shadow: -2px 2px 5px 0px rgba(193,193,193,0.75);
+}
+
+#b8 .Container3 img{
+  width: 90%;
+  height: 80%;
+  border-radius: 100%;
 }
 
 #f9 {
@@ -707,7 +734,7 @@ img {
   display: flex;
   justify-content: start;
   align-items: center;
-  background-color: rgba(255, 255, 255, 0.151);
+  background-color: rgb(48, 48, 48);
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   border: 1px solid white;
@@ -715,11 +742,12 @@ img {
   text-shadow: 2px 2px 2px gray, -2px 2px 2px gray;
   padding-left: 1%;
   font-size: calc(0.04 * var(--book-height));
+  z-index: 1;
 }
 
 #f9 .line1,
 #f9 .line2 {
-  width: 28%;
+  width: 35%;
   height: 0.5px;
   background-color: white;
   position: absolute;
@@ -727,14 +755,51 @@ img {
 
 #f9 .line1 {
   top: 36%;
-  left: 25%;
+  left: 20%;
   transform: rotate(330deg);
 }
 
 #f9 .line2 {
-  left: 25%;
+  left: 20%;
   bottom: 38%;
   transform: rotate(205deg);
+}
+
+#f9 .Container2,
+#f9 .Container3{
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  right: 10%;
+  gap: 2%;
+  border-radius: 20%;
+  font-size: calc(0.03 * var(--book-height));
+  background-color: rgb(48, 48, 48);
+}
+
+#f9 .Container2{
+  top: 6%;
+  box-shadow: 2px -2px 5px 0px rgba(193,193,193,0.75);
+-webkit-box-shadow: 2px -2px 5px 0px rgba(193,193,193,0.75);
+-moz-box-shadow: 2px -2px 5px 0px rgba(193,193,193,0.75);
+}
+
+#f9 .Container3{
+  bottom: 6%;
+  box-shadow: 2px 2px 5px 0px rgba(193,193,193,0.75);
+-webkit-box-shadow: 2px 2px 5px 0px rgba(193,193,193,0.75);
+-moz-box-shadow: 2px 2px 5px 0px rgba(193,193,193,0.75);
+}
+
+#f9 img{
+  width: 90%;
+  height: 80%;
+  border-radius: 100%;
 }
 
 /* Design */
