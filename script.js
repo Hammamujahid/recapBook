@@ -118,7 +118,7 @@ function goNextPage() {
 
     setTimeout(() => {
       updateZIndex();
-    if(currentPage!== paper8 && currentPage!==paper5){
+    if(currentPage!== paper8 && currentPage!==paper5 && currentPage!==paper11){
       currentPage.style.transformStyle = "";
     }
       isAnimating = false;
@@ -172,4 +172,23 @@ snowFall.snow(document.querySelector("body"), {
   shadow: true,
   flakeCount: 70,
   flakeColor: "#c7dfea",
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const images = document.querySelectorAll('img');
+  const modal = document.getElementById('image-modal');
+  const zoomedImage = document.getElementById('zoomed-image');
+
+  // Saat gambar diklik
+  images.forEach((image) => {
+    image.addEventListener('click', () => {
+      zoomedImage.src = image.src;
+      modal.classList.add('show');
+    });
+  });
+
+  // Tutup modal saat area luar gambar diklik
+  modal.addEventListener('click', () => {
+    modal.classList.remove('show');
+  });
 });
