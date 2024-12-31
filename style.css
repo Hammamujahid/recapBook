@@ -1106,6 +1106,7 @@ img {
   width: 100%;
   height: 2px;
   background-color: white;
+  margin-top: 5%;
 }
 
 #f12 .Container2{
@@ -1128,8 +1129,8 @@ img {
 }
 
 #f12 .Container2 img{
-  height: 90%;
-  width: 40%;
+  height: 60%;
+  width: 45%;
   border: 2px solid white;
   border-radius: 20px;
 }
@@ -1142,36 +1143,111 @@ img {
 #b12{
   background-image: url("/assets/img/bg1.jpg");
   background-position: 50% 80%;
-  padding: 0% 5% 5% 5%;
-}
-
-#b12 .Container{
-  width: 100%;
-  height: 100%;
+  padding: 4% 5%;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+}
+
+#b12 .Container1{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 100%;
+  height: 100%;
   gap: 5%;
-  border: 2px solid white;
-  border-top: transparent;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  position: relative;
 }
 
-#b12 .img1{
-  width: 60%;
-  height: 30%;
-  border: 2px solid white;
-  border-radius: 20px;
-  margin-top: 5%;
+#b12 .Container1 .box{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+  align-items: start;
+  gap: 10%;
 }
 
-#b12 video{
+#b12 .Container1 .text-content{
+  height: 50%;
   width: 50%;
-  height: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+
+#b12 .Container1 p{
+  font-size: calc(0.02 * var(--book-height));
+  text-align: start;
+}
+
+#b12 .Container1 h1{
+  font-size: calc(0.045 * var(--book-height));
+}
+
+#b12 .Container1 img{
+  width: 30%;
+  height: 35%;
+  margin-top: 2%;
   border: 2px solid white;
   border-radius: 20px;
+}
+
+#b12 .Container1 video{
+  width: 35%;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 20px;
+  position: absolute;
+  right: 5%;
+  bottom: 10%;
+}
+
+#b12 .line{
+  position: absolute;
+  width: 44.5%;
+  height: 10%;
+  right: 0%;
+  bottom: 0%;
+  border-bottom: 2px solid white;
+}
+
+#b12 .Container2{
+  width: 50%;
+  height: 62%;
+  position: absolute;
+  bottom: 4%;
+  left: 5%;
+  border: 2px solid white;
+  border-left: transparent;
+  border-bottom: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 2%;
+}
+
+#b12 .Container2 img{
+  width: 70%;
+  height: 38%;
+  margin-top: 4%;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+#b12 .Container2 h1{
+  font-size: calc(0.045 * var(--book-height));
+}
+
+#b12 .Container2 p{
+  padding-left: 4%;
+  padding-right: 8%;
+  text-align: start;
+  font-size: calc(0.02 * var(--book-height));
 }
 
 /* Design */
