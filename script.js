@@ -118,7 +118,7 @@ function goNextPage() {
 
     setTimeout(() => {
       updateZIndex();
-    if(currentPage!== paper8 && currentPage!==paper5 && currentPage!==paper11){
+    if(currentPage!== paper8 && currentPage!==paper5 && currentPage!==paper11 && currentPage!==paper14 && currentPage!==paper15){
       currentPage.style.transformStyle = "";
     }
       isAnimating = false;
