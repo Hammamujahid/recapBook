@@ -192,3 +192,22 @@ document.addEventListener('DOMContentLoaded', () => {
     modal.classList.remove('show');
   });
 });
+
+function checkOrientation() {
+  const alertBox = document.querySelector('.landscape-alert');
+  const bookBox = document.querySelector('.book');
+  const buttonBox = document.querySelector('button');
+  if (window.matchMedia("(orientation: portrait)").matches) {
+    alertBox.style.display = 'flex';
+    bookBox.style.display = 'none';
+    buttonBox.style.display = 'none';
+  } else {
+    alertBox.style.display = 'none';
+    bookBox.style.display = 'block';
+    buttonBox.style.display = 'block';
+  }
+}
+
+// Panggil fungsi saat halaman dimuat dan saat orientasi berubah
+window.addEventListener('load', checkOrientation);
+window.addEventListener('resize', checkOrientation);

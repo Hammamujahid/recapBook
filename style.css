@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+@media (orientation: portrait) {
+  .landscape-alert {
+    display: flex;
+    text-align: center;
+    width: 90%;
+    height: auto;
+    font-size: 100%;
+  }
+
+  .book {
+    display: none;
+  }
+
+  button{
+    display: none;
+  }
+}
+
 img {
   filter: brightness(80%);
   cursor: pointer;
