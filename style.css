@@ -4,22 +4,16 @@
   box-sizing: border-box;
 }
 
-@media (orientation: portrait) {
-  .landscape-alert {
-    display: flex;
-    text-align: center;
-    width: 90%;
-    height: auto;
-    font-size: 100%;
-  }
-
-  .book {
-    display: none;
-  }
-
-  button {
-    display: none;
-  }
+#portrait-message {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  color: black;
+  font-size: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  padding: 0% 5%;
 }
 
 img {
@@ -999,6 +993,10 @@ img {
   gap: 10%;
 }
 
+#f11 .Container2{
+  gap: 5%;
+}
+
 #f11 img {
   height: 95%;
   width: 32%;
@@ -1007,7 +1005,7 @@ img {
 }
 
 #f11 video {
-  height: 80%;
+  height: 100%;
   width: auto;
   border: 2px solid white;
   border-radius: 20px;
@@ -1427,7 +1425,7 @@ img {
   border-radius: 100%;
 }
 
-#f14 .box {
+#f14 .Container1 .box {
   width: 55%;
   padding-left: 5%;
 }
@@ -1446,23 +1444,41 @@ img {
   margin-top: 5%;
   padding-left: 5%;
   width: 100%;
-  height: 50%;
+  height: 52%;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  gap: 10%;
 }
 
 #f14 .Container2 p {
   font-size: calc(0.035 * var(--book-height));
 }
 
-#f14 .Container2 video {
-  width: 70%;
+#f14 .Container2 .box{
+  display: flex;
+  width: 100%;
+  height: 80%;
+  justify-content: start;
+  align-items: center;
+}
+
+#f14 .Container2  img{
+  width: 40%;
   height: 70%;
   border: 2px solid white;
   border-radius: 20px;
+}
+#f14 .Container2 i {
+  font-size: calc(0.017 * var(--book-height));
+  width: 55%;
+  margin-left: 5%;
+  text-align: start;
+  color: white;
+  border-top: 2px solid white;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #b14 {
@@ -1475,7 +1491,6 @@ img {
 }
 
 #b14 .Container1 {
-  border: 2px solid white;
   width: 100%;
   height: 45%;
   display: flex;
@@ -1564,10 +1579,10 @@ img {
 #f15 .Container1 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   width: 100%;
   height: 55%;
-  gap: 10%;
+  gap: 5%;
   padding-bottom: 5%;
   border-bottom: 2px solid white;
   border-radius: 10%;
@@ -1575,7 +1590,7 @@ img {
 
 #f15 .Container1 video {
   width: auto;
-  height: 80%;
+  height: 95%;
   border: 2px solid white;
   border-radius: 20px;
 }
@@ -1584,6 +1599,7 @@ img {
   width: 40%;
   font-size: calc(0.02 * var(--book-height));
   text-align: start;
+  margin-top: 2%;
 }
 #f15 .Container2{
   width: 100%;
@@ -1799,18 +1815,30 @@ align-items: center;
 #b16 h1{
   font-size: calc(0.04 * var(--book-height));
   text-decoration: underline;
-  text-underline-offset: 5%;
+  text-underline-offset: 10%;
+}
+
+#b16 .Container1{
+  margin-top: 5%;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  border-radius: 20px;
 }
 
 #b16 img{
-  margin-top: 5%;
   width: auto;
-  height: 22%;
+  height: 70%;
   border: 2px solid white;
   border-radius: 100%;
 }
 
-#b16 .Container{
+#b16 .Container2{
   width: 100%;
   height: 60%;
   display: flex;
@@ -1820,10 +1848,9 @@ align-items: center;
 }
 
 #b16 p{
-  margin-top: 3%;
-  font-size: calc(0.015 * var(--book-height));
-  width: 20%;
-  text-align: center;
+  font-size: calc(0.018 * var(--book-height));
+  width: 50%;
+  text-align: start;
 }
 
 #b16 .box1{
@@ -1831,15 +1858,15 @@ align-items: center;
   height: 60%;
   position: absolute;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: end;
   padding: 3%;
   bottom: 5%;
-  left: 8%;
-  border: 2px solid white;
-  border-top: transparent;
-  border-right: transparent;
-  border-radius: 20px;
+  left: 6%;
+  border-bottom: 2px solid white;
+  /* border-top: transparent;
+  border-right: transparent; */
+  border-radius: 30px;
 }
 
 #b16 .box2{
@@ -1847,21 +1874,109 @@ align-items: center;
   height: 60%;
   position: absolute;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: end;
   padding: 3%;
   bottom: 5%;
-  right: 8%;
-  border: 2px solid white;
-  border-top: transparent;
-  border-left: transparent;
-  border-radius: 20px;
+  right: 6%;
+  border-bottom: 2px solid white;
+  /* border-top: transparent;
+  border-left: transparent; */
+  border-radius: 30px;
 }
 
 #b16 video{
   width: auto;
-  height: 80%;
+  height: 90%;
   border-radius: 20%;
+  border: 2px solid white;
+}
+
+#f17{
+  background-image: url("/assets/img/bg1.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: white;
+  padding: 4% 5%;
+  gap: 3%;
+}
+
+#f17 .Container1{
+  display: flex;
+  width: 100%;
+  height: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#f17 .Container1 .box{
+  margin-left: 5%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5%;
+}
+
+#f17 .Container1 h1{
+  font-size: calc(0.035 * var(--book-height));
+}
+
+#f17 .Container1 p{
+  font-size: calc(0.02 * var(--book-height));
+  text-align: start;
+}
+
+#f17 .Container1 img{
+  margin-right: 5%;
+  width: 30%;
+  height: 90%;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+#f17 .Container2{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 55%;
+  justify-content: start;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  gap: 3%;
+}
+
+#f17 .Container2 .box{
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+#f17 .Container2 img{
+  width: 45%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+#f17 .Container2 p{
+  font-size: calc(0.03 * var(--book-height));
+  margin-left: 5%;
+}
+
+#f17 .Container2 i{
+  margin-top: 3%;
+  font-size: calc(0.02 * var(--book-height));
+  color: white;
+  width: 100%;
+  height: 50%;
 }
 
 /* Design */

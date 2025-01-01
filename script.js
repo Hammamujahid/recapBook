@@ -118,14 +118,19 @@ function goNextPage() {
 
     setTimeout(() => {
       updateZIndex();
-    if(currentPage!== paper8 && currentPage!==paper5 && currentPage!==paper11 && currentPage!==paper14 && currentPage!==paper15){
-      currentPage.style.transformStyle = "";
-    }
+      if (
+        currentPage !== paper8 &&
+        currentPage !== paper5 &&
+        currentPage !== paper11 &&
+        currentPage !== paper14 &&
+        currentPage !== paper15
+      ) {
+        currentPage.style.transformStyle = "";
+      }
       isAnimating = false;
     }, 500);
 
-    currentState++; 
-
+    currentState++;
 
     if (currentState === maxState) {
       closeBook(false);
@@ -156,14 +161,19 @@ function goPrevPage() {
 }
 
 //Font Size
-window.addEventListener('resize', () => {
-  const bookHeight = document.querySelector('.book').offsetHeight;
-  document.documentElement.style.setProperty('--book-height', bookHeight + 'px');
+window.addEventListener("resize", () => {
+  const bookHeight = document.querySelector(".book").offsetHeight;
+  document.documentElement.style.setProperty(
+    "--book-height",
+    bookHeight + "px"
+  );
 });
 
-const initBookHeight = document.querySelector('.book').offsetHeight;
-document.documentElement.style.setProperty('--book-height', initBookHeight + 'px');
-
+const initBookHeight = document.querySelector(".book").offsetHeight;
+document.documentElement.style.setProperty(
+  "--book-height",
+  initBookHeight + "px"
+);
 
 snowFall.snow(document.querySelector("body"), {
   round: true,
@@ -174,40 +184,45 @@ snowFall.snow(document.querySelector("body"), {
   flakeColor: "#c7dfea",
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const images = document.querySelectorAll('img');
-  const modal = document.getElementById('image-modal');
-  const zoomedImage = document.getElementById('zoomed-image');
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll("img");
+  const modal = document.getElementById("image-modal");
+  const zoomedImage = document.getElementById("zoomed-image");
 
   // Saat gambar diklik
   images.forEach((image) => {
-    image.addEventListener('click', () => {
+    image.addEventListener("click", () => {
       zoomedImage.src = image.src;
-      modal.classList.add('show');
+      modal.classList.add("show");
     });
   });
 
   // Tutup modal saat area luar gambar diklik
-  modal.addEventListener('click', () => {
-    modal.classList.remove('show');
+  modal.addEventListener("click", () => {
+    modal.classList.remove("show");
   });
 });
 
-function checkOrientation() {
-  const alertBox = document.querySelector('.landscape-alert');
-  const bookBox = document.querySelector('.book');
-  const buttonBox = document.querySelector('button');
-  if (window.matchMedia("(orientation: portrait)").matches) {
-    alertBox.style.display = 'flex';
-    bookBox.style.display = 'none';
-    buttonBox.style.display = 'none';
+const checkOrientation = () => {
+  const book = document.querySelector("#book");
+  const portraitMessage = document.querySelector("#portrait-message");
+  const buttons = document.querySelectorAll("button");
+  if (window.innerWidth > window.innerHeight) {
+    // Mode Landscape
+    book.style.display = "block";
+    buttons.forEach((button) => {
+      button.style.display = "block";
+    });
+    portraitMessage.style.display = "none";
   } else {
-    alertBox.style.display = 'none';
-    bookBox.style.display = 'block';
-    buttonBox.style.display = 'block';
+    // Mode Portrait
+    book.style.display = "none";
+    buttons.forEach((button) => {
+      button.style.display = "none";
+    });
+    portraitMessage.style.display = "flex";
   }
-}
+};
 
-// Panggil fungsi saat halaman dimuat dan saat orientasi berubah
-window.addEventListener('load', checkOrientation);
-window.addEventListener('resize', checkOrientation);
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
