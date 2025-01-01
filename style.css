@@ -165,10 +165,12 @@ img {
   font-size: calc(0.05 * var(--book-height));
 }
 
-#b2 video {
+#b2 img {
   margin-top: 12%;
   width: 70%;
   height: 37%;
+  border: 2px solid white;
+  border-radius: 20px;
 }
 
 #b2 .text-content {
@@ -840,16 +842,17 @@ img {
   height: 100%;
 }
 
-#b9 .Container1 video {
-  width: 55%;
-  height: 85%;
+#b9 .Container1 img {
+  width: 50%;
+  height: 80%;
   border: 2px solid white;
-  border-radius: 5px;
+  border-radius: 20%;
 }
 
 #b9 .Container1 p {
   margin-left: 4%;
   font-size: calc(0.02 * var(--book-height));
+  margin-top: 4%;
 }
 
 #b9 .Container2 {
@@ -1004,7 +1007,7 @@ img {
 }
 
 #f11 video {
-  height: 100%;
+  height: auto;
   width: 50%;
   border: 2px solid white;
   border-radius: 20px;
@@ -1656,7 +1659,7 @@ align-items: center;
 }
 
 #b15 .Container2 p{
-  margin-left: 5%;
+  margin-left: 10%;
 }
 
 #b15 .Container2{
@@ -1664,27 +1667,19 @@ align-items: center;
   width: 90%;
   height: 65%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   bottom: 5%;
 }
 
-#b15 .box{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  height: 100%;
-  gap: 10%;
-  justify-content: center;
-  align-items: center;
-  padding-left: 5%;
-}
 
 #b15 .Container2 img{
-  width: 38%;
+  width: 30%;
   height: auto;
   border: 2px solid white;
   border-radius: 20px;
+  margin-right: 10%;
+
 }
 
 #f16{
