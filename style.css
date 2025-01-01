@@ -1820,7 +1820,7 @@ align-items: center;
 #b16 p{
   margin-top: 3%;
   font-size: calc(0.015 * var(--book-height));
-  width: 70%;
+  width: 20%;
   text-align: center;
 }
 
@@ -1859,6 +1859,7 @@ align-items: center;
 #b16 video{
   width: 75%;
   height: auto;
+  border-radius: 20%;
 }
 
 /* Design */
