@@ -22,8 +22,6 @@ const paper15 = document.querySelector("#p15");
 const paper16 = document.querySelector("#p16");
 const paper17 = document.querySelector("#p17");
 const paper18 = document.querySelector("#p18");
-const paper19 = document.querySelector("#p19");
-const paper20 = document.querySelector("#p20");
 const cover2 = document.querySelector("#c2");
 const pages = [
   cover1,
@@ -45,13 +43,11 @@ const pages = [
   paper16,
   paper17,
   paper18,
-  paper19,
-  paper20,
   cover2,
 ];
 
 let currentState = 1;
-let numOfPapers = 22;
+let numOfPapers = 20;
 let maxState = numOfPapers + 1;
 let isAnimating = false;
 
