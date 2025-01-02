@@ -55,6 +55,27 @@ let numOfPapers = 22;
 let maxState = numOfPapers + 1;
 let isAnimating = false;
 
+const checkOrientation = () => {
+  const portraitMessage = document.querySelector("#portrait-message");
+  const buttons = document.querySelectorAll("button");
+  if (window.innerWidth > window.innerHeight) {
+    // Mode Landscape
+    buttons.forEach((button) => {
+      button.style.display = "block";
+    });
+    portraitMessage.style.display = "none";
+  } else {
+    // Mode Portrait
+    buttons.forEach((button) => {
+      button.style.display = "none";
+    });
+    portraitMessage.style.display = "flex";
+  }
+};
+
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
+
 pages.forEach((page, index) => {
   page.style.zIndex = pages.length - index;
 });
@@ -202,27 +223,3 @@ document.addEventListener("DOMContentLoaded", () => {
     modal.classList.remove("show");
   });
 });
-
-const checkOrientation = () => {
-  const book = document.querySelector("#book");
-  const portraitMessage = document.querySelector("#portrait-message");
-  const buttons = document.querySelectorAll("button");
-  if (window.innerWidth > window.innerHeight) {
-    // Mode Landscape
-    book.style.display = "block";
-    buttons.forEach((button) => {
-      button.style.display = "block";
-    });
-    portraitMessage.style.display = "none";
-  } else {
-    // Mode Portrait
-    book.style.display = "none";
-    buttons.forEach((button) => {
-      button.style.display = "none";
-    });
-    portraitMessage.style.display = "flex";
-  }
-};
-
-window.addEventListener("load", checkOrientation);
-window.addEventListener("resize", checkOrientation);
