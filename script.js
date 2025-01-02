@@ -51,6 +51,19 @@ let numOfPapers = 20;
 let maxState = numOfPapers + 1;
 let isAnimating = false;
 
+window.addEventListener("load", () => {
+  const book = document.querySelector("#book");
+  const loader = document.getElementById("loader");
+  const buttons = document.querySelectorAll("button");
+
+  // Sembunyikan loader dan tampilkan konten
+  loader.classList.add("hidden");
+  book.classList.remove("hidden");
+  buttons.forEach((button) => {
+    button.classList.remove("hidden");
+  });
+});
+
 const checkOrientation = () => {
   const portraitMessage = document.querySelector("#portrait-message");
   const buttons = document.querySelectorAll("button");
