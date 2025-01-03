@@ -103,20 +103,33 @@ h1{
   font-family: "Patrick Hand", cursive;
 }
 
-#c1{
+#fc1{
   text-align: center;
+  background-image: url("/assets/img/cover.png");
+  background-size: cover;
+  background-position: center;
+  filter: brightness(85%);
 }
 
 #bc1 {
   padding-left: 10%;
   padding-top: 4%;
   padding-bottom: 4%;
+  background-image: url("/assets/img/cover2.png");
+  filter: brightness(55%);
 }
 
 #c2 .front-cover {
   padding-right: 10%;
   padding-top: 4%;
   padding-bottom: 4%;
+  background-image: url("/assets/img/cover2.png");
+  filter: brightness(55%);
+}
+
+#c2 .back-cover{
+  background-image: url("/assets/img/cover2.png");
+  filter: brightness(55%);
 }
 
 #bc1 .Container,
